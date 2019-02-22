@@ -4,7 +4,7 @@ resources:
   type: git
   source:
     branch: master
-    uri: {{git-project-url}}
+    uri: https://github.com/LiYa-Xu/email-with-attachments
 
 jobs:
 - name: send-email-with-attachment
