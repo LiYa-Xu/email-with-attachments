@@ -9,7 +9,7 @@ resources:
 - name: send-email
   type: email
   source:
-    from: YOUR-SENDER-EMAIL-ADDRESS-GOES-HERE
+    from: xuliya_0116@126.com
 
 jobs:
 - name: send-email-with-metadata
@@ -57,13 +57,13 @@ jobs:
 
     - put: send-email
       params:
-        to: [YOUR-DESTINATION-EMAIL-ADDRESS-GOES-HERE]
+        to: xuliya_0116@126.com
         subject: ./email-text/email-subject.txt
         body: ./email-text/email-body.txt
 
     on_failure:
       put: send-email
       params:
-        to: [YOUR-DESTINATION-EMAIL-ADDRESS-GOES-HERE]
+        to: [xuliya_0116@126.com
         subject: ./email-text/email-subject-failure.txt
         body: ./email-text/email-body-failure.txt
